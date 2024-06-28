@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="module-project.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Insert the provided CSS here for convenience */
+    </style>
+</head>
+<body>
+        <div class="main-con">
+            <div class="container">
+                <header>
+                    <div class="title">
+                        ROCK<br>
+                        PAPER<br>
+                        SCISSORS
+                    </div>
+                    <div class="scores">
+                        <div class="score">
+                            <h2>Computer</h2>
+                            <h2>Score</h2>
+                            <p id="pc-score"></p>
+                        </div>
+                        <div class="score">
+                            <h2>Your</h2>
+                            <h2>Score</h2>
+                            <p id="your-score"></p>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="game-buttons">
+                        <div ><button class="button rock" id="rock" data-choice="rock"></button></div>
+                        <div ><button class="button scissors" id="scissors" data-choice="scissors"></button></div>
+                        <div ><button class="button paper" id="paper" data-choice="paper"></button></div>
+                        <div class="line line-rock-paper"></div>
+                        <div class="line line-paper-scissors"></div>
+                        <div class="line line-rock-scissors"></div>
+                    </div>
+                    <div class="result-board" >
+                        <div class="choices">
+                            <div class="user-choice choice"> <p>you picked</p><button class="button user-selection"  disabled></button></div>
+                            <div class="result">
+                                <h1 class="result-message"></h1>
+                                <h2 id="against">AGAINST PC</h2>
+                                <button class="play-again">play again</button>
+                            </div>
+                            <div class="computer-choice choice"> <p>pc picked</p><button class="button computer-selection"  disabled></button></div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="game-rules" id="game-rules">
+            <h2>Game Rules</h2>
+            <ul class="list">
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you'll count off ("rock, paper, scissors, shoot" or just "rock, paper, scissors").</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                <li>If both players lay down the same hand, each player lays down another hand.</li>
+            </ul>
+            <button class="close-rules">X</button>
+        </div>
+        <div class="rules"><button class="btn Rules" id="Rules">RULES</button>
+            <button class="btn next" id="next">NEXT</button>
+        </div>
+
+        <div class="win-screen">
+            <div class="content">
+                <div><img src="./starpng.png" alt="" class="star">
+                    <img src="trophy.png" alt="trophy" class="trophy"></div>
+                <h1 id="hurray">HURRAY!!</h1>
+                <p id="you_won">YOU WON THE GAME</p>
+                <button class="play-again" id="play-again2">play again</button>
+            </div>
+        </div>
+</body>
+<script src="module-project.js"></script>
+</html>
